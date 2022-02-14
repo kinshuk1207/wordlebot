@@ -1,4 +1,5 @@
 import requests
+from agents import agent_random
 
 response = requests.get('http://wordleapi.azurewebsites.net/api/daily?size=5')
 answer = response.text
@@ -29,6 +30,8 @@ def guess(word):
     print('Green = ', green, '\nYellow = ', yellow, '\nGrey = ', grey)
 
 
-guess('crane')
-guess('brain')
-guess('razer')
+# guess('crane')
+# guess('brain')
+# guess('racer')
+
+guess(agent_random())
