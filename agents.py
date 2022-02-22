@@ -10,5 +10,7 @@ with open("wordlist.txt") as validwords:
 def agent_random():
     return random.choice(validwordlist)
 
+def game():
+    agent_random()
 
 
